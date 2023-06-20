@@ -4,9 +4,10 @@
 
 #include <stdio.h>
 
+
 /**
  * main - prints a text according number
- * Return: Always 0 (Success)
+ * Return: Always  (Success)
  *
  */
 
@@ -15,9 +16,9 @@ int main(void)
 {
 	int n, lastd;
 
-	srand(time(0))
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	lasted = n % 10;
+	lastd = n % 10;
 
 	if (lastd > 5)
 	{
@@ -31,5 +32,5 @@ int main(void)
 	{
 	printf("Last digi of %d is %d and is less than 6 and not 0\n", n, lastd);
 	}
-	return (0)
+	return (0);
 }
